@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リバーシゲーム</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>リバーシ</h1>
+        <div id="settings">
+            <label for="ai-level">AIの強さ:</label>
+            <select id="ai-level">
+                <option value="easy">易しい</option>
+                <option value="medium" selected>普通</option>
+                <option value="hard">難しい</option>
+            </select>
+            <label for="time-limit">制限時間:</label>
+            <select id="time-limit">
+                <option value="15">15秒</option>
+                <option value="30">30秒</option>
+                <option value="0" selected>無制限</option>
+            </select>
+            <button id="start-game">ゲーム開始</button>
+        </div>
+        <div id="score">
+            <span id="black-score">黒: 2</span>
+            <span id="white-score">白: 2</span>
+        </div>
+        <div id="timer"></div>
+        <div id="board"></div>
+        <div id="status"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
